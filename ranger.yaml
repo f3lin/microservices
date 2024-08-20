@@ -42,7 +42,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: rancher.ingress.ddnsfree.com
+    - host: rancher.mymaster.ddnsfree.com
       http:
         paths:
           - path: /

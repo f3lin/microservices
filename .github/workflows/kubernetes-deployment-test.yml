@@ -11,9 +11,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - uses: actions-hub/kubectl@master
-        with:
-          args: get nodes -o wide
+      - name: Get nodes
+        run: kubectl get nodes -o wide
 
 #      - uses: actions-hub/kubectl@master
 #        env:
